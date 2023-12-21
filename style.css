@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "PokemonFont";
+  src: url(./Fonts/Pokemon\ Solid.ttf);
+}
+
+@font-face {
+  font-family: "PokemonFont2";
+  src: url(./Fonts/Pokemon\ Hollow.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: url(./Assets/headerBackground.jpg);
+  background-size: cover;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: rgb(62, 51, 72);
+  background-image: url(./Assets/BacgroundBody.jpg);
+  margin: 0;
+  color: white;
+  font-family: "PokemonFont";
+
+}
+img.logo{
+  width: 60vw;
+  height: 50vh;
+}
+.container {
+  padding: 0px;
+  margin: 0px;
+}
+.card-front\>{
+
+  color: #000000;
+
+}
+.card {
+  display: flex;
+  width: 10vw;
+  height: 50vh;
+  background-image: url(./Assets/pokebola.png);
+  background-position: center;
+  background-size: cover;
+  list-style: none;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+  font-size: 40px;
+  margin: 30px;
+  border-radius: 100px;
+  align-items: center;
+  flex-direction: column;
+}
+.card-type {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 0;
+  font-family: Rubik Doodle Shadow;
+  font-size: 20px;
+  color: #312c1a;
+}
+
+.card-img {
+  width: 10vw;
+}
+#pokedex {
+  margin-left: 50px;
+  display: flex;
+  padding-inline-start: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.card:hover {
+  animation: bounce 5s linear;
+}
+.typesPokemon {
+  font-family: fantasy;
+  color: #b79e42;
+}
+@keyframes bounce {
+  20% {
+    transform: translateY(-15px);
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(-0px);
+  }
+  80% {
+    transform: translateY(-0px);
+  }
+}
